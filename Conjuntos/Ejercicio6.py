@@ -53,6 +53,6 @@ numeros = set()
 while activacion == True:
     # limpiar pantalla, el comando depende del sistema
     if os.name == 'nt': os.system('cls')
-    else: os.system(clear)
+    else: os.system('clear')
     print(menu())
     activacion = main(numeros)

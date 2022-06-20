@@ -20,13 +20,12 @@ nombres = {
 'soloa': (a-b-c),
 'solob': (b-a-c),
 'soloc': (c-a-b),
+'UNA': (a-b-c)|(b-a-c)|(c-a-b),
 }
 
-for vars in nombres.keys():
-    print(f'{vars} = {nombres[vars]}',end='')
-    if type(nombres[vars]) == int: 
-        print('')
-        continue
-    else: print(f', {len(nombres[vars])}')
-solo1 = nombres['soloa']|nombres['solob']|nombres['soloc']
-print(f'Solo 1: {solo1}, {len(solo1)}')
+print(f'''
+a) ¿Cuántos leen 2 y sólo 2 revistas? RESPUESTA: {len(nombres['DOS'])} 
+b) ¿Cuántos no leen ninguna revista? RESPUESTA: {nombres['N']}
+c) ¿Cuántos leen 1 y sólo 1 revista? RESPUESTA: {len(nombres['UNA'])}
+d) ¿Qué número de lectores tienen las 3 revistas? RESPUESTA: {len(nombres['ABC'])}
+''')
