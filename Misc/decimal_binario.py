@@ -25,6 +25,8 @@ def bintodec(entrada):
         a += 1
     return(sum(nums))
 
+def bin2dec(binary:str) -> int: return sum(list(reversed([int(x) for x in binary]))[z]*(2**z) for z in range(0,len(list(reversed([int(x) for x in binary])))))
+
 def conversion():
     os.system('cls')
     print('''
@@ -46,7 +48,7 @@ def convertir():
             input('Pulsa ENTER para continuar...')
         elif opcion == 2:
             n = input('Introduce un número de base 2: ')
-            print(f"El número {n} en decimal es: {(bintodec(n))}")
+            print(f"El número {n} en decimal es: {(bin2dec(n))}")
             input('Pulsa ENTER para continuar...')
         elif opcion == 3:
             inicio()
