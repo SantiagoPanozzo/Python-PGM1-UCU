@@ -60,28 +60,28 @@ def convertir():
 def suma(a,b):
     x = bintodec(a)
     y = bintodec(b)
-    z = y+b
+    z = y+x
     return(''.join(dectobin(z)))
 def resta(a,b):
     x = bintodec(a)
     y = bintodec(b)
-    z = y-b
+    z = y-x
     return(''.join(dectobin(z)))
 def division(a,b):
     x = bintodec(a)
     y = bintodec(b)
-    z = y%b
+    z = y%x
     return(''.join(dectobin(z)))
 def multiplicacion(a,b):
     x = bintodec(a)
     y = bintodec(b)
-    z = y*b
+    z = y*x
     return(''.join(dectobin(z)))
 def operaciones():
     seguir = True
     while seguir == True:
         eleccion = leer('''
-#########################################################
+################################################################
 Programa para realizar operaciones con números binarios
 ¿Qué operación deseas realizar?
 1) Suma
@@ -89,7 +89,7 @@ Programa para realizar operaciones con números binarios
 3) Multiplicación
 4) División
 5) Salir
-#########################################################
+################################################################
 
 Opcion: ''')
         if eleccion == 1:
